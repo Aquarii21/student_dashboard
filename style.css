@@ -1,0 +1,246 @@
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/premium-photo/abstract-light-background-with-some-geometric-patterns_1021219-526.jpg'); /* Fix the image URL */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    min-height: 100vh;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: greenyellow;
+
+}
+
+
+h2 {
+    font-family: 'Playfair Display', 'Georgia', sans-serif; 
+    font-size: 50px; 
+    font-weight: bold; 
+    text-align: center; 
+    color: black;
+    margin-top: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+.holder {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-holder {
+    max-width: 700px;
+}
+
+
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4CAF50;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.link:hover {
+    background-color: #45a049;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.btn {
+    padding: 8px 16px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-update {
+    background-color: #4CAF50;
+}
+
+.btn-update:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+.btn-create {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-create:hover {
+    background-color: #218838;
+}
+
+.btn-create-new {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create-new:hover {
+    background-color: #0056b3;
+}
+
+
+label {
+    font-size: 18px;  
+    font-weight: bold;  
+    color: floralwhite;  
+    display: block;  
+    margin-bottom: 8px;  
+    text-transform: uppercase;  
+    letter-spacing: 1px; 
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+    border: 1px solid #28a745; 
+    outline: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 45px;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
